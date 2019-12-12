@@ -13,21 +13,9 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser(findTestData('LoginDetailsNJS').getValue(1, 1))
-
-WebUI.closeWindowIndex(1)
-
-WebUI.closeWindowIndex(1)
-
-WebUI.switchToWindowIndex(0)
+WebUI.openBrowser('www.gmail.com')
 
 WebUI.maximizeWindow()
-
-WebUI.click(findTestObject('LoginButton'))
-
-WebUI.click(findTestObject('GoogleButton'))
-
-WebUI.switchToWindowIndex(1)
 
 WebUI.setText(findTestObject('UserName'), findTestData('LoginDetailsNJS').getValue(2, 1))
 
@@ -39,13 +27,19 @@ WebUI.setText(findTestObject('Password'), findTestData('LoginDetailsNJS').getVal
 
 WebUI.click(findTestObject('NextButton'))
 
-WebUI.switchToWindowIndex(0)
+WebUI.delay(10)
 
-not_run: WebUI.waitForElementPresent(findTestObject('NotificationButton'), 10)
+WebUI.click(findTestObject('Gmail_Page/ComposeEmailButton'))
 
-not_run: WebUI.mouseOver(findTestObject('NotificationButton'))
+WebUI.click(findTestObject('Gmail_Page/MaximizeWindow'))
 
-not_run: WebUI.delay(5)
+WebUI.setText(findTestObject('Gmail_Page/ToList'), 'ajith.rachapudi@oracle.com')
 
-not_run: WebUI.click(findTestObject('RecruiterMessagesButton'))
+WebUI.setText(findTestObject('Gmail_Page/Subject'), 'Subject:Opportunity with Oracle Corporation, Hyderabad for Product Test Engineers')
+
+WebUI.setText(findTestObject('Gmail_Page/Body'), findTestData('LoginDetailsNJS').getValue(6, 1))
+
+WebUI.uploadFile(findTestObject('Gmail_Page/AttachFileGmail'), 'D:\\chanduR\\Resume11.docx')
+
+not_run: WebUI.click(findTestObject('Gmail_Page/SendEmailButton'))
 

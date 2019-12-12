@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='APPLICATION SENT'])[1]/following::span[1]</value>
+         <value>//ul[2]/li/div/ul/li[3]/a/span</value>
       </entry>
       <entry>
          <key>BASIC</key>
