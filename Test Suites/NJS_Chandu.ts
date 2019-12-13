@@ -4,8 +4,7 @@
    <name>NJS_Chandu</name>
    <tag></tag>
    <isRerun>false</isRerun>
-   <lastRun>2019-12-13T07:38:48</lastRun>
-   <mailRecipient></mailRecipient>
+   <mailRecipient>thota.chandu1@gmail.com;</mailRecipient>
    <numberOfRerun>0</numberOfRerun>
    <pageLoadTimeout>30</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>

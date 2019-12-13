@@ -37,7 +37,7 @@ WebUI.delay(10)
 
 WebUI.click(findTestObject('GlassdoorPage/InterviewsButton'))
 
-WebUI.setText(findTestObject('GlassdoorPage/JobTitle'), 'API Testing')
+WebUI.setText(findTestObject('GlassdoorPage/JobTitle'), 'PostgresSQL Developer')
 
 WebUI.setText(findTestObject('GlassdoorPage/Location'), ' ')
 
@@ -51,7 +51,7 @@ WebUI.switchToWindowIndex(0)
 
 WebUI.click(findTestObject('GlassdoorPage/SalariesButton'))
 
-WebUI.setText(findTestObject('GlassdoorPage/CompanyName'), 'EPAM Systems')
+WebUI.setText(findTestObject('GlassdoorPage/CompanyName'), 'RealPage')
 
 WebUI.setText(findTestObject('GlassdoorPage/CompanyLocation'), 'Hyderabad(India)')
 
