@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="SCRSankranthi" time="37" tests="1" failures="0" errors="0">
+   <testsuite name="SCRSankranthi" tests="1" failures="0" errors="0" time="37" timestamp="2019-12-13 07:49:04" hostname="chandu.t - wlpt518.imidomain.com" id="Test Suites/SCRSankranthi">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\chandu.t\\Katalon Studio\\NJS_Chandu\\Reports\\SCRSankranthi\\20191213_074900"/>
+         <property name="logFiles" value="C:\\Users\\chandu.t\\Katalon Studio\\NJS_Chandu\\Reports\\SCRSankranthi\\20191213_074900\\execution0.log"/>
+         <property name="attachments" value="C:\\Users\\chandu.t\\Katalon Studio\\NJS_Chandu\\Reports\\SCRSankranthi\\20191213_074900\\1576203580436.png"/>
+         <property name="hostName" value="chandu.t - wlpt518.imidomain.com"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="5.8.2.1"/>
+         <property name="browser" value="Chrome 79.0.3945.79"/>
+         <property name="hostAddress" value="10.0.0.9"/>
+         <property name="sessionId" value="abf804f7c0729b0b8f00b50ba4b4bc0f"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/SCRCheck" classname="Test Cases/SCRCheck" status="PASSED">
+         <system-out><![CDATA[2019-12-13 07:49:05 - [TEST_CASE][PASSED] - Test Cases/SCRCheck: Test Cases/SCRCheck
+
+2019-12-13 07:49:06 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: 'https://scr.indianrailways.gov.in/'
+
+2019-12-13 07:49:27 - [MESSAGE][PASSED] - Browser is opened with url: 'https://scr.indianrailways.gov.in/'
+
+2019-12-13 07:49:27 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2019-12-13 07:49:28 - [MESSAGE][PASSED] - Current window maximized
+
+2019-12-13 07:49:28 - [TEST_STEP][PASSED] - mouseOver: Object: 'Object Repository/SCRPage/PublicInformation' is hovered
+
+2019-12-13 07:49:28 - [MESSAGE][PASSED] - Object: 'Object Repository/SCRPage/PublicInformation' is hovered
+
+2019-12-13 07:49:28 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/SCRPage/PressRelease' is clicked on
+
+2019-12-13 07:49:30 - [MESSAGE][PASSED] - Object: 'Object Repository/SCRPage/PressRelease' is clicked on
+
+2019-12-13 07:49:30 - [TEST_STEP][PASSED] - delay: Delayed 10 second(s)
+
+2019-12-13 07:49:40 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2019-12-13 07:49:40 - [TEST_STEP][PASSED] - takeScreenshot: Taking screenshot successfully
+
+2019-12-13 07:49:40 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\chandu.t\\Katalon Studio\\NJS_Chandu\\Reports\\SCRSankranthi\\20191213_074900\\1576203580436.png]]
+
+2019-12-13 07:49:40 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2019-12-13 07:49:41 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-12-13 07:49:04 - [TEST_SUITE][PASSED] - SCRSankranthi: Test Cases/SCRCheck]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

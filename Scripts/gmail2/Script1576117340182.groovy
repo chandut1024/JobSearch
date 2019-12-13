@@ -29,17 +29,25 @@ WebUI.click(findTestObject('NextButton'))
 
 WebUI.delay(10)
 
-WebUI.click(findTestObject('Gmail_Page/ComposeEmailButton'))
+WebUI.click(findTestObject('Gmail2_Page/NoButton'))
 
-WebUI.click(findTestObject('Gmail_Page/MaximizeWindow'))
+WebUI.click(findTestObject('Gmail2_Page/ComposeEmailButton2'))
 
-WebUI.setText(findTestObject('Gmail_Page/ToList'), 'ajith.rachapudi@oracle.com')
+WebUI.click(findTestObject('Gmail2_Page/Maximize2'))
 
-WebUI.setText(findTestObject('Gmail_Page/Subject'), 'Subject:Opportunity with Oracle Corporation, Hyderabad for Product Test Engineers')
+WebUI.delay(10)
 
-WebUI.setText(findTestObject('Gmail_Page/Body'), findTestData('LoginDetailsNJS').getValue(6, 2))
+WebUI.executeJavaScript('', [])
 
-WebUI.uploadFile(findTestObject('Gmail_Page/AttachFileGmail'), 'D:\\chanduR\\Resume11.docx')
+WebUI.click(findTestObject('Gmail2_Page/ToList2'))
+
+WebUI.setText(findTestObject('Gmail2_Page/ToList2'), findTestData('LoginDetailsNJS').getValue(6, 2))
+
+WebUI.setText(findTestObject('Gmail2_Page/Subject2'), findTestData('LoginDetailsNJS').getValue(7, 2))
+
+WebUI.setText(findTestObject('Gmail2_Page/Body2'), findTestData('LoginDetailsNJS').getValue(8, 2))
+
+not_run: WebUI.uploadFile(findTestObject('Gmail_Page/AttachFileGmail'), 'D:\\chanduR\\Resume11.docx')
 
 not_run: WebUI.click(findTestObject('Gmail_Page/SendEmailButton'))
 

@@ -13,33 +13,17 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser('www.gmail.com')
+WebUI.openBrowser('https://scr.indianrailways.gov.in/')
 
 WebUI.maximizeWindow()
 
-WebUI.setText(findTestObject('UserName'), findTestData('LoginDetailsNJS').getValue(2, 1))
+WebUI.mouseOver(findTestObject('SCRPage/PublicInformation'))
 
-WebUI.click(findTestObject('NextButton'))
-
-WebUI.delay(5)
-
-WebUI.setText(findTestObject('Password'), findTestData('LoginDetailsNJS').getValue(3, 1))
-
-WebUI.click(findTestObject('NextButton'))
+WebUI.click(findTestObject('SCRPage/PressRelease'))
 
 WebUI.delay(10)
 
-WebUI.click(findTestObject('Gmail_Page/ComposeEmailButton'))
+WebUI.takeScreenshot()
 
-WebUI.click(findTestObject('Gmail_Page/MaximizeWindow'))
-
-WebUI.setText(findTestObject('Gmail_Page/ToList'), findTestData('LoginDetailsNJS').getValue(6, 1))
-
-WebUI.setText(findTestObject('Gmail_Page/Subject'), findTestData('LoginDetailsNJS').getValue(7, 1))
-
-WebUI.setText(findTestObject('Gmail_Page/Body'), findTestData('LoginDetailsNJS').getValue(8, 1))
-
-not_run: WebUI.uploadFile(findTestObject('Gmail_Page/AttachFileGmail'), 'D:\\chanduR\\Resume11.docx')
-
-not_run: WebUI.click(findTestObject('Gmail_Page/SendEmailButton'))
+WebUI.closeBrowser()
 

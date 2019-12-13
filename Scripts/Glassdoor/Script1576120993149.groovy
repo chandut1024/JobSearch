@@ -13,9 +13,13 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser('www.gmail.com')
+WebUI.openBrowser('www.glassdoor.com')
 
 WebUI.maximizeWindow()
+
+WebUI.click(findTestObject('GlassdoorPage/GoogleLoginButton'))
+
+WebUI.switchToWindowIndex(1)
 
 WebUI.setText(findTestObject('UserName'), findTestData('LoginDetailsNJS').getValue(2, 1))
 
@@ -27,19 +31,29 @@ WebUI.setText(findTestObject('Password'), findTestData('LoginDetailsNJS').getVal
 
 WebUI.click(findTestObject('NextButton'))
 
+WebUI.switchToWindowIndex(0)
+
 WebUI.delay(10)
 
-WebUI.click(findTestObject('Gmail_Page/ComposeEmailButton'))
+WebUI.click(findTestObject('GlassdoorPage/InterviewsButton'))
 
-WebUI.click(findTestObject('Gmail_Page/MaximizeWindow'))
+WebUI.setText(findTestObject('GlassdoorPage/JobTitle'), 'API Testing')
 
-WebUI.setText(findTestObject('Gmail_Page/ToList'), findTestData('LoginDetailsNJS').getValue(6, 1))
+WebUI.setText(findTestObject('GlassdoorPage/Location'), ' ')
 
-WebUI.setText(findTestObject('Gmail_Page/Subject'), findTestData('LoginDetailsNJS').getValue(7, 1))
+WebUI.click(findTestObject('GlassdoorPage/SearchButton'))
 
-WebUI.setText(findTestObject('Gmail_Page/Body'), findTestData('LoginDetailsNJS').getValue(8, 1))
+WebUI.switchToWindowIndex(1)
 
-not_run: WebUI.uploadFile(findTestObject('Gmail_Page/AttachFileGmail'), 'D:\\chanduR\\Resume11.docx')
+WebUI.click(findTestObject('GlassdoorPage/SortByDate'))
 
-not_run: WebUI.click(findTestObject('Gmail_Page/SendEmailButton'))
+WebUI.switchToWindowIndex(0)
+
+WebUI.click(findTestObject('GlassdoorPage/SalariesButton'))
+
+WebUI.setText(findTestObject('GlassdoorPage/CompanyName'), 'EPAM Systems')
+
+WebUI.setText(findTestObject('GlassdoorPage/CompanyLocation'), 'Hyderabad(India)')
+
+WebUI.click(findTestObject('GlassdoorPage/CompanySearch'))
 
